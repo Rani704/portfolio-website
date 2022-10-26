@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bea69f3d2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="crown.jpg"class="logo" height:80 picel>
+            <ul>
+                
+                   <li> <a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                   <li> <a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hello  , I'm  Rani .</h1>
+        </div>
+    </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="r.jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am an engineering student ,currently doing btech in computer science and engineering with specialisation in artificial intelligence and machine learning from ajay kumar garg engineering college affivadited by aktu.I am a young ,energetic and enthusiatic girl.</p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link"onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-link"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab"id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building ios/android app</li>
+                        </ul>
+                    </div><div class="tab-content"id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>Btech in CSE(AI AND ML)</li>
+                        <li><span>2020-2021</span><br>class 12 with 91%(PCM)</li>
+                        <li><span>2018-2019</span><br>class 10 with 93%</li>
+                    </ul>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!------------services------>
+<div id="achievements">
+    <div class="container">
+        <h1 class="subtitle">My achievements</h1>
+        <div class="achievements-list">
+
+        <div><i class="fa-solid fa-trophy"></i>
+            <h2>Inter-school debate </h2>
+        <p>I have consecutively won in every inter-school debate competition both in english and hindi.</p>
+        <a href="#">learn more</a></div>
+    <div>
+        <i class="fa-solid fa-medal"></i>
+        <h2>Academic Excellence award 2019</h2>
+       <p>I have won academic execellence award in 2019 for scoring 93% in class 10 board exam .</p>
+       <a href="#">learn more</a>
+       </div>
+       <div><i class="fa-solid fa-trophy"></i>
+        <h2>Extra curricular activities</h2>
+       <p>Participated in several other activities at school level such as dancing,drama,singing,anchoring,quiz etc</p>
+       <a href="#">learn more</a></div>
+</div>
+    </div>
+</div>
+<!-------------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="work.PNG">
+                <div class="layer">
+                    <h3>website</h3>
+                    <p>This is a book website in which you can discover about different books and sources from where you can buy them </p>
+                    <a href="#">
+                    <i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">See more</a>
+    </div>
+</div>
+<!----------------------contact us---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact gmail-rani7042003@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>Phone no.123456789</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href=""class="btn btn2">Download cv</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email"name="email" placeholder="Your email"required>
+                    <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                    <button type="Submit"class="btn btn2">Submit</button>
+                </form>
+    
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright@rani made by Rani</p>
+    </div>
+</div>
+<script>
+    var tablinks= document.getElementsByClassName(tab-links);
+    var tabcontent= document.getElementsByClassName(tab-content);
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tablinks){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.cuurentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
